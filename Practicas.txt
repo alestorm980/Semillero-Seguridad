@@ -1,0 +1,30 @@
+Sesión 1:
+Presentacion, instalar kali, instalar metasploitable2,
+
+Sesión 2:
+-Exploit,payload,etc,Comandos metasploit
+-Análisis vulnerabilidades(nessus), red,puertos
+
+Sesión 3:
+- meterpreter
+- Comandos meterpreter
+- Exploit creados .exe
+- msf multihandler
+- Veil-evasion
+- autoit
+- Esconder exploit en .exe, imagenes, macros
+- recibir exploit en multihandler msfconsole
+- msfvenom
+
+Sesión 4:
+- Sniffers
+- Phishing 
+- Spoofing
+- MITM
+
+
+
+
+
+
+

