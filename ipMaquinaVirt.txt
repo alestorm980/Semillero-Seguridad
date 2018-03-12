@@ -1,0 +1,4 @@
+route -n ip gateway
+sudo ifconfig eth0 down
+sudo ifconfig eth0 172.16.10.252 netmask 255.255.255.0
+sudo route add default gw 172.16.10.1 (ip gateway )
